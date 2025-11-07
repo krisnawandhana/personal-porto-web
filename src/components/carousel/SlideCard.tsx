@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { truncate } from "./utils";
 import type { Slide } from "./type";
 

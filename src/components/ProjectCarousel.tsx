@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import { useRef } from "react";
 import ProjectCard from "./ProjectCard";
 
 type Item = Parameters<typeof ProjectCard>[0]["item"];

@@ -1,4 +1,3 @@
-// components/ExperienceCard.tsx
 "use client";
 import { motion } from "framer-motion";
 import { ComicRibbon } from "./comic/ComicRibbon";

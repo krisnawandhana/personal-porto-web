@@ -1,13 +1,11 @@
-import React from "react";
 import HighlightLetters from "../utility/HighLightLetters";
-// import ProjectCarousel from "../components/ProjectCarousel";
 import FullImageCarousel, { type Slide } from "../components/FullImageCarousel";
 import { projects } from "../data/project";
 
 export default function Projects() {
 
   const slides: Slide[] = projects.map((p) => ({
-    src: `/project/${p.imageUrl}.png`, // <-- UBAH: pastikan file ada di /public/project/
+    src: `/project/${p.imageUrl}.png`, 
     alt: p.name,
     caption: `${p.name} — ${p.tech}`,
     github: p.github ?? null,
@@ -31,9 +29,9 @@ export default function Projects() {
           <div className="text-3xl font-bold text-white font-heading mb-6"/>
           <FullImageCarousel
             slides={slides}
-            autoPlay={true}        // <-- UBAH: jika tidak mau autoplay, set ke false
-            interval={3500}        // <-- UBAH: kecepatan autoplay
-            aspect="aspect-[15/9]" // <-- UBAH: rasio, atau "h-[440px]"
+            autoPlay={true}        
+            interval={3500}
+            aspect="aspect-[15/9]"
           />
         </section>
       </article>

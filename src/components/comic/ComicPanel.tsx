@@ -1,13 +1,9 @@
-// components/comic/ComicPanel.tsx
 "use client";
 import { motion, type Variants, type Transition } from "framer-motion";
 
 type ComicPanelProps = {
-  /** Polygon dalam format "x,y x,y ..." untuk SVG */
   polygonPoints?: string;
-  /** Polygon persentase untuk clip-path (pakai "_" untuk spasi) */
   clipPathPercent?: string;
-  /** Polygon outline (sedikit lebih keluar) */
   outlinePoints?: string;
   minHeights?: { base?: string; md?: string; lg?: string };
   panelClass?: string;

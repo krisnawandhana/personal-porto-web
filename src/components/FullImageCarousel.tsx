@@ -1,10 +1,11 @@
 "use client";
-import React from "react";
 import type { CarouselProps } from "./carousel/type";
 import SlideCard from "./carousel/SlideCard";
 import Arrows from "./carousel/Arrows";
 import Indicators from "./carousel/Indicators";
 import { useInfiniteCarousel } from "./carousel/useInfiniteCarousel";
+
+export type { Slide } from "./carousel/type";
 
 export default function FullImageCarousel({
   slides,
@@ -18,7 +19,6 @@ export default function FullImageCarousel({
   const {
     viewportRef,
     trackRef,
-    index,
     realLen,
     realActive,
     next,

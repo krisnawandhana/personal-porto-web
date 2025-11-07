@@ -1,4 +1,3 @@
-// components/comic/ComicRibbon.tsx
 "use client";
 import { motion, type Variants, type Transition } from "framer-motion";
 import HighlightLetters from "../../utility/HighLightLetters";

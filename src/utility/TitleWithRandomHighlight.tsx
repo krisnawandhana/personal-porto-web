@@ -1,5 +1,4 @@
-import React from "react";
-import HighlightLetters from "./HighlightLetters";
+import HighlightLetters from "./HighLightLetters";
 
 export default function TitleWithRandomHighlight({ title }: { title: string }) {
   // ambil panjang string
