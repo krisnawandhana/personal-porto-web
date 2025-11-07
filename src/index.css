@@ -1,0 +1,224 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "p5shatty";
+  src: url("/fonts/p5hatty-1 (1).ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Expose-Regular";
+  src: url("/fonts/Expose-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Persona5MenuFontPrototype-Regular";
+  src: url("/fonts/Persona5MenuFontPrototype-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Persona5Main";
+  src: url("/fonts/Persona5Main.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Markin LT Ultra Bold";
+  src: url("/fonts/Markin LT Ultra Bold.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@theme{
+  --color-yellow-cranola: #FFDB70;
+  --color-background: #121212;
+  --color-dark: #0d0d0d;
+  --color-primary: #d92323;
+  --color-secondary: #732424;
+  --color-accent: #8c6723;
+
+  --font-persona: "Expose-Regular", ui-sans-serif, system-ui, sans-serif;
+  --font-main-text: "p5shatty", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Markin LT Ultra Bold", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Persona5Main", ui-sans-serif, system-ui, sans-serif;
+  --font-menu: "Persona5MenuFontPrototype-Regular", ui-sans-serif, system-ui, sans-serif;
+  
+}
+
+body {
+  @apply bg-dark;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+.typewrite > .wrap {
+  border-right: 0.08em solid #fff;
+}
+
+.wave { display:inline-block; transform-origin:70% 70%; animation: wave 1.8s ease-in-out infinite; }
+
+
+@keyframes wave {
+  0%{transform:rotate(0deg)} 10%{transform:rotate(14deg)} 20%{transform:rotate(-8deg)}
+  30%{transform:rotate(14deg)} 40%{transform:rotate(-4deg)} 50%{transform:rotate(10deg)}
+  60%,100%{transform:rotate(0deg)}
+}
+
+.pict {
+  box-shadow: 0px 0px 73px -9px rgba(18, 16, 16, 0.75);
+}
+
+.fadein-up {
+  opacity: 0;
+  animation: fadeInUp 0.5s forwards;
+  animation-delay: 500ms;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translate3d(0, 100%, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+.fade-in-from-left {
+  opacity: 0;
+  animation: fadeInLeft 0.5s ease-out forwards;
+  animation-delay: 500ms;
+}
+@keyframes fadeInLeft {
+  0% { opacity: 0; transform: translateX(-100%); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+.fadein-right {
+  opacity: 0;
+  animation: fadeInRight 0.5s ease-out forwards;
+  animation-delay: 500ms;
+}
+@keyframes fadeInRight {
+  0% { opacity: 0; transform: translateX(100%); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+.fadein-left {
+  opacity: 0;
+  animation: fadeInLeft 0.5s ease-out forwards;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeins-1 {
+  animation-delay: 500ms;
+}
+
+.fadeins-2 {
+  animation-delay: 800ms;
+}
+
+.img-tech,
+.tech {
+  transition: transform 0.3s ease;
+}
+
+.item-tech:hover .img-tech {
+  transform: scale(1.3);
+}
+
+.item-tech:hover .tech {
+  transform: translateY(-12px);
+}
+
+.item-tech:hover .status-tech {
+  opacity: 1;
+}
+
+.item-card:hover {
+  transform: translateY(-8px);
+  transition: transform 0.3s ease;
+}
+
+svg:hover {
+  stroke: var(--color-primary);
+}
+
+@keyframes fadeZoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.fade-zoom-in {
+  animation: fadeZoomIn 1s ease-in-out;
+}
+
+/* globals.css */
+:root{
+  --panel: polygon(1% 34%, 9% 38%, 12% 33%, 19% 40%, 21% 12%, 88% 12%, 97% 73%, 23% 44%, 19% 54%, 14% 43%, 9% 44%);
+  --panel-outline: polygon(0% 33%, 8% 37%, 11% 32%, 18% 39%, 20% 11%, 89% 10%, 98% 74%, 22% 43%, 18% 55%, 13% 42%, 8% 43%);
+}
+
+@media (max-width: 640px){
+  :root{
+    /* versi mobile bisa disederhanakan/diubah sudutnya */
+    --panel: polygon(2% 36%, 10% 39%, 13% 34%, 20% 41%, 22% 12%, 88% 12%, 96% 74%, 24% 45%, 20% 55%, 15% 44%, 10% 45%);
+    --panel-outline: polygon(1% 35%, 9% 38%, 12% 33%, 19% 40%, 21% 11%, 89% 11%, 97% 75%, 23% 44%, 19% 56%, 14% 43%, 9% 44%);
+  }
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* .no-scrollbar {
+  scrollbar-width: none;           
+  -ms-overflow-style: none;        
+}
+.no-scrollbar::-webkit-scrollbar { 
+  display: none;
+} */
+
+.wave { display:inline-block; transform-origin:70% 70%; animation: wave 1.8s ease-in-out infinite; }
+@keyframes wave {
+  0%{transform:rotate(0deg)} 10%{transform:rotate(14deg)} 20%{transform:rotate(-8deg)}
+  30%{transform:rotate(14deg)} 40%{transform:rotate(-4deg)} 50%{transform:rotate(10deg)}
+  60%,100%{transform:rotate(0deg)}
+}
+
+
+.no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+  .no-snap {
+    scroll-snap-type: none !important;
+    -webkit-scroll-snap-type: none !important;
+  }
+
+
+
+
