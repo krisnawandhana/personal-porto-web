@@ -18,7 +18,7 @@ export default function Layout() {
   return (
     <div className="max-w-7xl mx-auto flex flex-col relative min-h-screen overflow-hidden">
       {/* Navbar */}
-      <nav className="max-w-7xl mx-auto md:fixed top-0 z-[999] w-screen backdrop-blur-md bg-[#121212]/50 py-6 px-4 isolate">
+      <nav className="max-w-7xl mx-auto md:fixed top-0 z-[99] w-screen backdrop-blur-md bg-[#121212]/50 py-6 px-4 isolate">
         <div className="container mx-auto flex flex-wrap items-center justify-between">
           <button onClick={redirectToHome} className="flex">
             <span className="self-center text-2xl font-heading tracking-widest text-white whitespace-nowrap hover:text-gray-200">

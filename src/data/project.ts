@@ -18,7 +18,7 @@ export const projects: ProjectItem[] = [
         "My personal website, I created this website to display my profile, skills and projects. As well as my place to try new technology.",
       tech: "React, Tailwind",
       github: "https://github.com/krisnawandhana/personal-porto-web.git",
-      demo: "https://bagasrakha.netlify.app/",
+      demo: "https://personal-porto-web-gzxd.vercel.app/",
     },
     {
       id: 2,
