@@ -13,7 +13,7 @@ export const projects: ProjectItem[] = [
     {
       id: 1,
       name: "Personal Website",
-      imageUrl: "portfolio_v2",
+      imageUrl: "personal-porto",
       status:
         "My personal website, I created this website to display my profile, skills and projects. As well as my place to try new technology.",
       tech: "React, Tailwind",
@@ -38,7 +38,7 @@ export const projects: ProjectItem[] = [
         "OrchidCare is a smart monitoring system designed to optimize the growth conditions of orchids. It utilizes IoT sensors to collect data on environmental factors and provides insights through a user-friendly interface.",
       tech: "React, Supabase, IoT",
       github: "https://github.com/krisnawandhana/Orchidcare-Final.git",
-      demo: "https://drive.google.com/file/d/1jXbF0UtuBjbexaO09F20s3EyZepBahL4/view?usp=sharing",
+      demo: "https://drive.google.com/file/d/1M3b0q9n_eTyW6lGCBJp9l1YZqupWPjnc/view?usp=sharing",
     },
     {
       id: 4,
@@ -77,13 +77,13 @@ export const projects: ProjectItem[] = [
       status:
         "BookSpace is a simple web app designed for book lovers to discover, share, and discuss their favorite books. It features a clean interface, user reviews, and personalized recommendations.",
       tech: "Next.js, Tailwind, Vercel",
-      github: "null",
-      demo: "null",
+      github: "https://github.com/krisnawandhana/BookSpace.git",
+      demo: "https://book-space-kohl.vercel.app/",
     },
     {
       id: 8,
       name: "TimeGap — Landing Page & Promo Website",
-      imageUrl: "baligoodguide",
+      imageUrl: "baligoodguid",
       status:
         "A promotional website built to showcase TimeGap, a mobile application designed for managing schedules and staying productive. The site highlights app features, benefits, and download options in a clean and responsive layout powered by React and Tailwind CSS.",
       tech: "React, Tailwind",

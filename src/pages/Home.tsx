@@ -133,13 +133,14 @@ export default function Home() {
         {/* CTA (opsional) */}
         <motion.div variants={item} className="pt-2 flex gap-3 justify-center md:justify-start">
           <motion.button whileHover={{ y: -2, rotate: -1 }} whileTap={{ y: 0, rotate: 0, scale: 0.98 }}
-            onClick={() => navigate("/experience")}
+            onClick={() => navigate("/portfolio")}
             transition={{ type: "spring", stiffness: 400, damping: 18 }}
             className="-skew-x-6 relative inline-flex items-center px-5 py-2 bg-white text-black font-extrabold uppercase tracking-[0.2em] shadow-[0_8px_0_0_rgba(0,0,0,0.85)]">
             <span className="skew-x-6">View Work</span>
             <span className="absolute -inset-1 border-2 border-black -z-10" />
           </motion.button>
           <motion.button whileHover={{ y: -2, rotate: 1 }} whileTap={{ y: 0, rotate: 0, scale: 0.98 }}
+            onClick={() => window.open("https://wa.me/6289697400693", "_blank")}
             transition={{ type: "spring", stiffness: 400, damping: 18 }}
             className="-skew-x-6 relative inline-flex items-center px-5 py-2 bg-primary text-black font-extrabold uppercase tracking-[0.2em] shadow-[0_8px_0_0_rgba(0,0,0,0.85)]">
             <span className="skew-x-6">Contact</span>

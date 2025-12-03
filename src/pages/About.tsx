@@ -103,7 +103,7 @@ export default function About() {
                 {/* stroke putih tebal (komik) */}
                 <span className="absolute -inset-1 rounded-full border-[4px] border-white pointer-events-none" />
                   <PersonaAvatar
-                    src="https://preview.redd.it/8017ozu3io421.jpg?width=640&crop=smart&auto=webp&s=7e82436a33df6b151bf41a2b7ec1f6bf294e934c"
+                    src="/project/avatar-2.png"
                     alt="Krisna"
                     size={400}
                   />
